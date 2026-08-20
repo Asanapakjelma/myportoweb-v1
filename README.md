@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Portfolio
 
 ## Building Blocks
@@ -33,3 +34,6 @@ pnpm build
 ```bash
 pnpm preview
 ```
+=======
+# myportoweb-v1
+>>>>>>> 127a347c5a19ca444eb2f31db8c3ae4f15eb7dd1

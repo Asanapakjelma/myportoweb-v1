@@ -53,6 +53,14 @@
 	transform: translateY(5px);
 }
 
+.floating-btn:focus-visible > div,
+.floating-btn:active > div {
+	transform: translateY(4px);
+	box-shadow:
+		0px -3px 15px 0px var(--primaryHi) inset,
+		0px 0px 10px 1px var(--primaryHi);
+}
+
 .floating-btn.first {
 	top: 12%;
 	left: 15%;
@@ -76,6 +84,33 @@
 	background-color: var(--accentBg);
 	box-shadow: 0px -3px 15px 0px var(--accentHi) inset;
 	color: var(--accentFg);
+}
+
+@media screen and (max-width: 700px) {
+	.floating-btn,
+	.floating-btn div {
+		width: 7.5rem;
+		height: 2.75rem;
+	}
+
+	.floating-btn {
+		font-size: 0.85rem;
+	}
+
+	.floating-btn.first {
+		top: 10%;
+		left: 6%;
+	}
+
+	.floating-btn.sec {
+		bottom: 14%;
+		right: 6%;
+	}
+
+	.floating-btn span {
+		width: 5rem;
+		height: 3rem;
+	}
 }
 
 .floating-btn.sec > span {

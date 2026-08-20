@@ -1,5 +1,6 @@
 .about-me {
 	min-height: 100vh;
+	scroll-margin-top: 1rem;
 	display: flex;
 	padding: 2rem 4rem;
 	/* justify-content: center;
@@ -115,10 +116,10 @@
 
 @media screen and (max-width: 768px) {
 	.about-me {
-		padding: 2rem 2rem;
+		padding: 2rem 1rem 4rem;
 		flex-direction: column;
 		align-items: center;
-		gap: 1rem;
+		gap: 0;
 		text-align: center;
 	}
 
@@ -136,8 +137,23 @@
 		padding: 0;
 	}
 
+	.about-me > div:first-child {
+		padding-inline: 1.5rem;
+		margin-bottom: 3rem;
+	}
+
+	.about-me > div:nth-child(2) {
+		padding-inline: 1.5rem;
+	}
+
+	.about-me .title {
+		width: 100%;
+		margin: 0 auto;
+	}
+
 	.about-me .intro {
 		padding: 1.5rem 1rem;
+		margin-bottom: 3rem;
 	}
 
 	.about-me .intro p {
@@ -155,5 +171,27 @@
 	.timeline .place {
 		font-size: 1rem;
 		letter-spacing: 0.05rem;
+	}
+
+	.timeline {
+		padding-left: 2rem;
+		font-size: 1rem;
+		text-align: left;
+	}
+
+	.timeline::after {
+		left: 0.8rem;
+	}
+
+	.timeline-item::before {
+		left: -2.55rem;
+	}
+
+	.timeline-list {
+		padding-left: 0;
+	}
+
+	.timeline-description {
+		line-height: 1.5;
 	}
 }

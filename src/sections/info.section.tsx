@@ -12,18 +12,18 @@ export const InfoSection = () => {
 				{/* <div>⭐ Star this repo</div> */}
 				<span></span>
 			</a>
-			<FloatingButton label='About Me' className='first' href='/#about-me' />
+			<FloatingButton label='About Me' className='first' href='#about-me' />
 			<p>Hi, I am</p>
 
 			<TextHover text='Fajar Nur Rahman' className='name' />
-			<p style={{fontSize: 32}}>UI/UX Designer | Web Developer | Spare Parts Administrator</p>
+			<p className='hero-role'>UI/UX Designer | Web Developer | Spare Parts Administrator</p>
 
-			<FloatingButton label='tech' className='sec' href='/#tech-stack' />
+			<FloatingButton label='Tech' className='sec' href='#tech-stack' />
 			
 			<div className='blur'></div>
 			<div className='bottom-bar'>
 				<GlowLink href='https://github.com/Asanapakjelma' color='rgba(255, 255, 255, 0.4)' icon={<FaGithub color='rgba(255, 255, 255, 0.9)' />} aria-label='github' />
-				<GlowLink href='#' color='rgb(0, 160, 220, 0.6)' icon={<FaLinkedinIn color='rgb(0, 160, 220)' />} aria-label-linkedin />
+				<GlowLink href='#' color='rgb(0, 160, 220, 0.6)' icon={<FaLinkedinIn color='rgb(0, 160, 220)' />} aria-label='linkedin' />
 				<GlowLink href='#' color='rgb(18, 122, 209, 0.7)' icon={<IoMailOutline color='rgb(18, 122, 209)' />} aria-label='mail' />
 			</div>
 		</div>
