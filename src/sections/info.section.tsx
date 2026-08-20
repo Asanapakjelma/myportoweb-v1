@@ -6,19 +6,36 @@ import { GlowLink } from '../components/glow-box-link';
 import { TextHover } from '../components/text-hover.component';
 
 export const InfoSection = () => {
+	const scrollToSection = (sectionId: string) => {
+		document.getElementById(sectionId)?.scrollIntoView({
+			behavior: 'smooth',
+			block: 'start',
+		});
+	};
+
 	return (
 		<div className='hero-section'>
 			<a href="#" target="_blank" rel="noopener noreferrer" className="github-ribbon">
 				{/* <div>⭐ Star this repo</div> */}
 				<span></span>
 			</a>
-			<FloatingButton label='About Me' className='first' href='#about-me' />
+			<FloatingButton
+				label='About Me'
+				className='first'
+				href='#about-me'
+				onClick={() => scrollToSection('about-me')}
+			/>
 			<p>Hi, I am</p>
 
 			<TextHover text='Fajar Nur Rahman' className='name' />
 			<p className='hero-role'>UI/UX Designer | Web Developer | Spare Parts Administrator</p>
 
-			<FloatingButton label='Tech' className='sec' href='#tech-stack' />
+			<FloatingButton
+				label='Tech'
+				className='sec'
+				href='#tech-stack'
+				onClick={() => scrollToSection('tech-stack')}
+			/>
 			
 			<div className='blur'></div>
 			<div className='bottom-bar'>
